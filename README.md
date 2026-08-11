@@ -1,4 +1,4 @@
-# vibecodeitbro.com
+# [vibecodeitbro.com](https://vibecodeitbro.com/)
 
 ![vibecodeitbro.com](screenshot.png)
 
