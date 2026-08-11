@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>VibeCode It, Bro - How to Vibecode: VPS + OpenCode Go AI Coding Tutorial</title>
+<meta name="description" content="Learn how to vibecode: set up a cheap VPS, install OpenCode Go, and ship apps with AI. Step-by-step vibecoding tutorial with Kamatera and Contabo. No SaaS bills."/>
+<meta property="og:site_name" content="vibecode it, bro"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://vibecodeitbro.com/"/>
+<meta property="og:title" content="VibeCode It, Bro - How to Vibecode: VPS + OpenCode Go AI Coding Tutorial"/>
+<meta property="og:description" content="A cheap VPS + OpenCode Go = your own AI coding rig. No $200/mo bills. No lock-in. Just a terminal and vibes."/>
+<meta property="og:image" content="https://vibecodeitbro.com/assets/og/og-card.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="vibecode it, bro — a cheap VPS + OpenCode Go = your own AI coding rig"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="VibeCode It, Bro - How to Vibecode: VPS + OpenCode Go"/>
+<meta name="twitter:description" content="A cheap VPS + OpenCode Go = your own AI coding rig. No $200/mo bills. Step-by-step tutorial."/>
+<meta name="twitter:image" content="https://vibecodeitbro.com/assets/og/og-card.png"/>
+<link rel="icon" href="/assets/favicon-v3.svg" type="image/svg+xml"/>
+<link rel="stylesheet" href="/css/style.css?v=30"/>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a class="nav__b" href="#top">
+      <svg class="nav__lg" viewBox="0 0 36 36" width="26" height="26"><circle cx="18" cy="18" r="16" fill="#3b82f6" stroke="#2563eb" stroke-width="2"/><polygon points="26,12 10,12 18,26" fill="#0a0d14"/></svg>
+      <span class="nav__bt">vibecode it, bro</span>
+    </a>
+    <nav class="nav__ls" id="navLinks">
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#vps" data-i18n="nav.vps">VPS</a>
+      <a href="#setup" data-i18n="nav.setup">Setup</a>
+      <a href="#models" data-i18n="nav.models">Models</a>
+      <a href="#modes" data-i18n="nav.modes">Modes</a>
+    </nav>
+    <div class="nav__ts">
+      <select id="langSelect" class="lang" aria-label="Language" autocomplete="off">
+        <option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option>
+        <option value="nl">NL</option><option value="ja">JA</option><option value="zh">ZH</option>
+        <option value="ar">AR</option><option value="ru">RU</option>
+        <option value="fa">FA</option>
+        <option value="vi">VI</option>
+        <option value="yue">粤</option>
+        <option value="de">DE</option>
+        <option value="pt">PT</option>
+        <option value="hi">HI</option>
+        <option value="ko">KO</option>
+        <option value="it">IT</option>
+        <option value="tr">TR</option>
+        <option value="pl">PL</option>
+        <option value="id">ID</option>
+      </select>
+      <button id="themeToggle" class="tt" type="button" aria-label="Toggle theme">☀</button>
+      <button class="bgr" id="navBurger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__pb" id="navProgress"></div>
+</header>
+
+<main id="main">
+<section class="hr" id="top">
+  <div class="hr__bg"><div class="hr__gd"></div><div class="hr__o hr__o-1"></div><div class="hr__o hr__o-2"></div></div>
+  <div class="hr__c">
+    <div class="hr__pl" data-i18n="hero.pill">SaaS bill too high? <strong>vibecode it, bro</strong></div>
+    <h1 class="hr__t"><span class="hr__gl" data-text="VIBECODE" data-i18n="hero.t1">VIBECODE</span><br><span class="hr__ta" data-i18n="hero.t2">it, bro.</span></h1>
+    <p class="hr__s" data-i18n="hero.sub">A cheap VPS + OpenCode Go = your own AI coding rig. No $200/mo bills. No lock-in. Just a terminal and vibes.</p>
+    <a class="btn btn-p" href="#setup" data-i18n="hero.cta1">Start vibecoding &rarr;</a>
+  </div>
+</section>
+
+<section class="sc sc-a" id="stack">
+  <div class="ct">
+    <div class="sc__hd"><span class="ey" data-i18n="stack.eyebrow">// the stack</span><h2 class="sc__t" data-i18n="stack.title">Two things. That's it.</h2></div>
+    <div class="gd gd-2">
+      <div class="cd cd-n"><span class="cd__n">01</span><h3 data-i18n="stack.s1t">A VPS</h3><p data-i18n="stack.s1d">A $5/mo Linux box you own. <strong>Kamatera</strong> for cheap hourly, <strong>Contabo</strong> for beefy specs.</p><a class="cd__l" href="#vps" data-i18n="stack.s1a">Compare &rarr;</a></div>
+      <div class="cd cd-n"><span class="cd__n">02</span><h3 data-i18n="stack.s2t">OpenCode Go</h3><p data-i18n="stack.s2d">$5 first month, then $10/mo flat-rate. Access to frontier open-source models like Grok 4.5, GLM-5.2, and Kimi K3. No per-token anxiety.</p><a class="cd__l" href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer sponsored" data-i18n="stack.s2a">Get OpenCode Go &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sc" id="vps">
+  <div class="ct">
+    <div class="sc__hd"><span class="ey" data-i18n="vps.eyebrow">// pick your box</span><h2 class="sc__t" data-i18n="vps.title">A VPS that costs less than Netflix.</h2></div>
+    <div class="vp">
+      <article class="vc vc--f vc--k">
+        <div class="vc__bd" data-i18n="vps.kbadge">★ recommended</div>
+        <img src="/assets/logos/kamatera.png" alt="Kamatera" class="vc__lo"/>
+        <p class="vc__tg" data-i18n="vps.ktag">Cheap, flexible, recommended</p>
+        <ul class="vc__ls">
+          <li data-i18n="vps.k1">⚡ <strong>Hourly billing.</strong> ~$0.005/hr. Pay for what you use.</li>
+          <li data-i18n="vps.k2">🆓 <strong>30-day free trial.</strong></li>
+          <li data-i18n="vps.k3">📈 <strong>Scale live.</strong> Add CPU/RAM in 60s.</li>
+          <li data-i18n="vps.k4">🌍 <strong>21 data centers worldwide.</strong></li>
+        </ul>
+        <div class="vc__pr"><span class="vc__fr" data-i18n="vps.from">from</span> <span class="vc__am">$4/mo</span></div>
+        <a class="btn btn-p btn-b" href="https://kamatera.sjv.io/c/1245219/3024352/36439" target="_blank" rel="noopener noreferrer sponsored" data-i18n="vps.kcta">Spin up Kamatera &rarr;</a>
+      </article>
+      <article class="vc vc--c">
+        <img src="/assets/logos/contabo.png" alt="Contabo" class="vc__lo"/>
+        <p class="vc__tg" data-i18n="vps.ctag">Pricier, but beefier specs</p>
+        <ul class="vc__ls">
+          <li data-i18n="vps.c1">💪 <strong>4 vCPU + 8 GB RAM.</strong> Cloud VPS 4. Beefier than Kamatera.</li>
+          <li data-i18n="vps.c2">💾 <strong>100 GB NVMe.</strong> Self-host everything.</li>
+          <li data-i18n="vps.c3">📅 <strong>Monthly billing.</strong> Best for 24/7.</li>
+          <li data-i18n="vps.c4">🌐 <strong>EU, US, Asia, AU.</strong></li>
+        </ul>
+        <div class="vc__pr"><span class="vc__fr" data-i18n="vps.from">from</span> <span class="vc__am">$4.67/mo</span></div>
+        <a class="btn btn-g btn-b" href="https://websplaining.com/contabo" target="_blank" rel="noopener noreferrer sponsored" data-i18n="vps.ccta">Check Contabo &rarr;</a>
+      </article>
+    </div>
+    <div class="vd">
+      <div class="vd__c"><span class="vd__l">🎬 Kamatera setup</span><iframe src="https://www.youtube-nocookie.com/embed/aLd_89X6geU" title="Kamatera VPS setup" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      <div class="vd__c"><span class="vd__l">🎬 Contabo setup</span><iframe src="https://www.youtube-nocookie.com/embed/WTcKpH2x7m4" title="Contabo VPS setup" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="sc sc-a" id="setup">
+  <div class="ct">
+    <div class="sc__hd"><span class="ey" data-i18n="setup.eyebrow">// the walkthrough</span><h2 class="sc__t" data-i18n="setup.title">Fresh VPS to vibecoding in ~10 minutes.</h2></div>
+    <div class="stp">
+      <article class="st"><div class="st__n">1</div><div class="st__b">
+        <h3 data-i18n="setup.s1t">Spin up a VPS</h3>
+        <p data-i18n="setup.s1d">Click Kamatera or Contabo above. Launch the latest Ubuntu LTS. 2 vCPU / 2 GB RAM is plenty. Save the <strong>IP</strong> and <strong>root password</strong>.</p>
+        <div class="sg" data-vps="kamatera">
+<figure class="sh"><span class="sh__n">1.1</span><img src="/assets/screenshots/kamatera/1. create free kamatera account.png" alt="Create account" loading="lazy"/><figcaption data-i18n="fig.1">Create a free Kamatera account</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.2</span><img src="/assets/screenshots/kamatera/2. my cloud.png" alt="My Cloud" loading="lazy"/><figcaption data-i18n="fig.2">My Cloud dashboard</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.3</span><img src="/assets/screenshots/kamatera/3. servers then create new server.png" alt="Servers" loading="lazy"/><figcaption data-i18n="fig.3">Go to Servers, create new server</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.4</span><img src="/assets/screenshots/kamatera/4.png" alt="Config" loading="lazy"/><figcaption data-i18n="fig.4">Choose a continent (region), then a country</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.5</span><img src="/assets/screenshots/kamatera/5 ubuntu.png" alt="Ubuntu" loading="lazy"/><figcaption data-i18n="fig.5">Choose operating system (OS): Ubuntu, latest version</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.6</span><img src="/assets/screenshots/kamatera/6.png" alt="CPU" loading="lazy"/><figcaption data-i18n="fig.6">Set CPU, RAM, SSD disk space, and server type (B/D/T/A)</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.7</span><img src="/assets/screenshots/kamatera/7.png" alt="Password" loading="lazy"/><figcaption data-i18n="fig.7">Set root password, name server, and billing cycle, then create the server</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.8</span><img src="/assets/screenshots/kamatera/8.png" alt="Queue" loading="lazy"/><figcaption data-i18n="fig.8">Server creation added as a task in queue</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.9</span><img src="/assets/screenshots/kamatera/9.png" alt="Finalize" loading="lazy"/><figcaption data-i18n="fig.9">Server is setting up</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.10</span><img src="/assets/screenshots/kamatera/10.png" alt="Review" loading="lazy"/><figcaption data-i18n="fig.10">Server created — appears in the server management list</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.11</span><img src="/assets/screenshots/kamatera/11.png" alt="Done" loading="lazy"/><figcaption data-i18n="fig.11">Server running - note the IP</figcaption></figure>
+        </div>
+        <h4 class="st__sh">Or use Contabo:</h4>
+        <div class="sg" data-vps="contabo">
+<figure class="sh"><span class="sh__n">1.12</span><img src="/assets/screenshots/contabo/1.png" alt="Step 1" loading="lazy"/><figcaption data-i18n="fig.12">Go to Contabo</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.13</span><img src="/assets/screenshots/contabo/2.png" alt="Step 2" loading="lazy"/><figcaption data-i18n="fig.13">Choose VPS plan</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.14</span><img src="/assets/screenshots/contabo/3.png" alt="Step 3" loading="lazy"/><figcaption data-i18n="fig.14">Select Cloud VPS 4 (formerly VPS 10, now Core VPS 4)</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.15</span><img src="/assets/screenshots/contabo/4.png" alt="Step 4" loading="lazy"/><figcaption data-i18n="fig.15">Configure server login credentials</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.16</span><img src="/assets/screenshots/contabo/5.png" alt="Step 5" loading="lazy"/><figcaption data-i18n="fig.16">Enter personal details</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.17</span><img src="/assets/screenshots/contabo/6.png" alt="Step 6" loading="lazy"/><figcaption data-i18n="fig.17">Enter billing and payment details</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.18</span><img src="/assets/screenshots/contabo/7.png" alt="Step 7" loading="lazy"/><figcaption data-i18n="fig.18">Order complete and confirmation</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.19</span><img src="/assets/screenshots/contabo/8.png" alt="Step 8" loading="lazy"/><figcaption data-i18n="fig.19">Three confirmation emails arrive — check your inbox for the server IP address</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.20</span><img src="/assets/screenshots/contabo/9.png" alt="Step 9" loading="lazy"/><figcaption data-i18n="fig.20">Open the email containing your server IP address</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.21</span><img src="/assets/screenshots/contabo/10.png" alt="Step 10" loading="lazy"/><figcaption data-i18n="fig.21">Login credentials: IPv4 address, username (root), IPv6 address</figcaption></figure>
+        </div>
+      </div></article>
+      <article class="st"><div class="st__n">2</div><div class="st__b">
+        <h3 data-i18n="setup.s2t">SSH in</h3>
+        <p data-i18n="setup.s2d"><code>ssh root@your-vps-ip</code>. Type <code>yes</code> at the prompt.</p>
+        <div class="sg">
+<figure class="sh"><span class="sh__n">2.1</span><img src="/assets/screenshots/ssh/1.png" alt="Terminal" loading="lazy"/><figcaption data-i18n="fig.22">Open your terminal and type the SSH command</figcaption></figure>
+<figure class="sh"><span class="sh__n">2.2</span><img src="/assets/screenshots/ssh/2.png" alt="SSH" loading="lazy"/><figcaption data-i18n="fig.23">Type yes to accept the host key</figcaption></figure>
+<figure class="sh"><span class="sh__n">2.3</span><img src="/assets/screenshots/ssh/3.png" alt="Host key" loading="lazy"/><figcaption data-i18n="fig.24">Enter the root password for your server</figcaption></figure>
+<figure class="sh"><span class="sh__n">2.4</span><img src="/assets/screenshots/ssh/4.png" alt="Password" loading="lazy"/><figcaption data-i18n="fig.25">Successfully SSH'd into your server</figcaption></figure>
+        </div>
+      </div></article>
+      <article class="st"><div class="st__n">3</div><div class="st__b">
+        <h3 data-i18n="setup.s3t">Install OpenCode</h3>
+        <p data-i18n="setup.s3d">Paste this into your SSH session and hit Enter:</p>
+        <div class="cm"><code id="cmd1">curl -fsSL https://opencode.ai/install | bash</code><button class="cm__c" data-copy="cmd1" aria-label="Copy" data-i18n-attr="aria-label" data-i18n="aria.copy">copy</button></div>
+        <div class="cm"><code id="cmd2">source ~/.bashrc</code><button class="cm__c" data-copy="cmd2" aria-label="Copy" data-i18n-attr="aria-label" data-i18n="aria.copy">copy</button></div>
+        <div class="cm"><code id="cmd3">opencode</code><button class="cm__c" data-copy="cmd3" aria-label="Copy" data-i18n-attr="aria-label" data-i18n="aria.copy">copy</button></div>
+        <div class="sg">
+<figure class="sh"><span class="sh__n">3.1</span><img src="/assets/screenshots/ssh/5.png" alt="curl" loading="lazy"/><figcaption data-i18n="fig.26">Running the curl command to install OpenCode</figcaption></figure>
+<figure class="sh"><span class="sh__n">3.2</span><img src="/assets/screenshots/ssh/6.png" alt="Done" loading="lazy"/><figcaption data-i18n="fig.27">OpenCode installed — now run source ~/.bashrc</figcaption></figure>
+<figure class="sh"><span class="sh__n">3.3</span><img src="/assets/screenshots/ssh/7.png" alt="OpenCode" loading="lazy"/><figcaption data-i18n="fig.28">After running the opencode command</figcaption></figure>
+        </div>
+      </div></article>
+      <article class="st"><div class="st__n">4</div><div class="st__b">
+        <h3 data-i18n="setup.s4t">Add OpenCode Go</h3>
+        <p data-i18n="setup.s4d">Sign up at opencode.ai and create an API key — then in OpenCode press <kbd>Ctrl</kbd>+<kbd>P</kbd>, choose <strong>OpenCode Go</strong>, and paste your key.</p>
+        <div class="sg">
+<figure class="sh"><span class="sh__n">4.1</span><img src="/assets/screenshots/ssh/8.png" alt="Installing" loading="lazy"/><figcaption data-i18n="fig.29">Connect a provider</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.2</span><img src="/assets/screenshots/ssh/9.png" alt="Done" loading="lazy"/><figcaption data-i18n="fig.30">Choose OpenCode Go</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.3</span><img src="/assets/screenshots/ssh/10.png" alt="Bashrc" loading="lazy"/><figcaption data-i18n="fig.31">Sign up to OpenCode Go using my <a href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer">affiliate link</a></figcaption></figure>
+<figure class="sh"><span class="sh__n">4.4</span><img src="/assets/screenshots/ssh/11.png" alt="Reloaded" loading="lazy"/><figcaption data-i18n="fig.32">Click API keys, then Create API key</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.5</span><img src="/assets/screenshots/ssh/12.png" alt="Cmd" loading="lazy"/><figcaption data-i18n="fig.33">Give your API key a name or label (e.g. opencode)</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.6</span><img src="/assets/screenshots/ssh/13.png" alt="Startup" loading="lazy"/><figcaption data-i18n="fig.34">Click create</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.7</span><img src="/assets/screenshots/ssh/14.png" alt="UI" loading="lazy"/><figcaption data-i18n="fig.35">Copy the API key — click the copy-to-clipboard icon next to it</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.8</span><img src="/assets/screenshots/ssh/15.png" alt="Welcome" loading="lazy"/><figcaption data-i18n="fig.36">Hold Shift and right-click to paste the API key (it starts with SK-, e.g. sk-WL68...szAkl), then press Enter</figcaption></figure>
+        </div>
+        <p class="st__h" data-i18n="setup.s4d2">💡 No account? <a href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer">Grab one here</a>.</p>
+      </div></article>
+      <article class="st"><div class="st__n">5</div><div class="st__b">
+        <h3 data-i18n="setup.s5t">Pick a model. Start vibing.</h3>
+        <p data-i18n="setup.s5d">Hit <kbd>Ctrl</kbd>+<kbd>P</kbd> again, pick <strong>model</strong>:</p>
+        <div class="sg">
+<figure class="sh"><span class="sh__n">5.1</span><img src="/assets/screenshots/ssh/16.png" alt="Ctrl+P" loading="lazy"/><figcaption data-i18n="fig.37">Press Ctrl+P for the live model list and choose a model</figcaption></figure>
+<figure class="sh"><span class="sh__n">5.2</span><img src="/assets/screenshots/ssh/17.png" alt="Model" loading="lazy"/><figcaption data-i18n="fig.38">Select a model variant — it determines how many tokens are burned and how fast inference runs (not all models have variants)</figcaption></figure>
+<figure class="sh"><span class="sh__n">5.3</span><img src="/assets/screenshots/ssh/18.png" alt="Vibing" loading="lazy"/><figcaption data-i18n="fig.39">You are now vibecoding</figcaption></figure>
+        </div>
+        <div class="mo" id="models" aria-busy="true">
+          <div class="mo__ld" id="modelsLoading"><span class="sp" aria-hidden="true"></span> <span data-i18n="setup.loading">loading model list...</span></div>
+          <div class="mo__gd" id="modelsGrid" hidden></div>
+        </div>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sc" id="modes">
+  <div class="ct">
+    <div class="sc__hd"><span class="ey" data-i18n="modes.eyebrow">// plan vs build</span><h2 class="sc__t" data-i18n="modes.title">Two modes. Use the right one.</h2></div>
+    <div class="gd gd-2">
+      <article class="mc mc-p"><span class="mc__l">📐 Plan</span><h3 data-i18n="modes.pTitle">Read. Think. Propose.</h3><p data-i18n="modes.pBody">The agent reads your codebase and writes a step-by-step plan. <strong>No files are edited.</strong> Review the plan, nudge it in chat, switch to Build when ready.</p></article>
+      <article class="mc mc-b"><span class="mc__l">🔨 Build</span><h3 data-i18n="modes.bTitle">Read. Edit. Run.</h3><p data-i18n="modes.bBody">The agent actually edits your files and runs commands. Pair with <code>git commit</code> for an instant undo button.</p></article>
+    </div>
+    <div class="tb"><span class="tb__i">🧠</span><div><h4 data-i18n="modes.tipTitle">Pro tip</h4><p data-i18n="modes.tipBody">Always start in <strong>Plan mode</strong>. Read the plan. Clean it up. Then switch to <strong>Build</strong>. That's vibecoding vs vibepanicking.</p></div></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="ct">
+    <h2 class="cta__t" data-i18n="cta.title">Stop reading. Start vibecoding.</h2>
+    <div class="cta__b">
+      <a class="btn btn-p" href="https://kamatera.sjv.io/c/1245219/3024352/36439" target="_blank" rel="noopener noreferrer sponsored" data-i18n="cta.k">Kamatera VPS &rarr;</a>
+      <a class="btn btn-y" href="https://websplaining.com/contabo" target="_blank" rel="noopener noreferrer sponsored" data-i18n="cta.c">Contabo VPS &rarr;</a>
+      <a class="btn btn-s" href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer" data-i18n="cta.g">OpenCode Go &rarr;</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="ct ft__in">
+    <a class="ft__b" href="#top">vibecode it, bro</a>
+    <nav class="ft__ls">
+      <a href="https://kamatera.sjv.io/c/1245219/3024352/36439" target="_blank" rel="noopener noreferrer sponsored" class="ft__lo ft__lo--k" title="Kamatera"><img src="/assets/logos/kamatera.png" alt="Kamatera"/></a>
+      <a href="https://websplaining.com/contabo" target="_blank" rel="noopener noreferrer sponsored" class="ft__lo ft__lo--c" title="Contabo"><img src="/assets/logos/contabo.png" alt="Contabo"/></a>
+      <a href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer sponsored" class="ft__lo ft__lo--o" title="OpenCode Go"><img src="/assets/logos/opencode.png" alt="OpenCode"/></a>
+      <a href="https://www.youtube.com/@Websplaining" target="_blank" rel="noopener noreferrer" class="ft__lo ft__lo--w" title="Websplaining"><img src="/assets/logos/websplaining.png" alt="Websplaining"/></a>
+    </nav>
+    <p class="ft__cp">© <span id="year"></span> Websplaining · vibecodeitbro.com</p>
+    <p class="ft__af" data-i18n="footer.affiliate">Affiliate links - we may earn a commission at no cost to you.</p>
+  </div>
+</footer>
+
+<button id="toTop" class="ttop" type="button" aria-label="Back to top">&uarr;</button>
+<div class="tst" id="toast" role="status" aria-live="polite"></div>
+
+<script>(function(){var l=localStorage.getItem('lang')||(navigator.language||'en').split('-')[0];var v=['en','fr','es','nl','ja','zh','ar','ru','fa','vi','yue','de','pt','hi','ko','it','tr','pl','id'];if(v.indexOf(l)===-1)l='en';document.write('<script src="/js/i18n/'+l+'.js?v=10"><'+'/script>');})()</script>
+<script>(function(){var d=document.documentElement;var t=localStorage.getItem('theme')||'dark';d.setAttribute('data-theme',t);var b=document.getElementById('themeToggle');b.textContent=t==='dark'?'☀':'☾';b.addEventListener('click',function(){var n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('theme',n);b.textContent=n==='dark'?'☀':'☾';});})()</script>
+<script src="/js/app.js?v=18" defer></script>
+<script src="/js/models.js?v=10" defer></script>
+</body>
+</html>
