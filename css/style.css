@@ -207,12 +207,10 @@ code{font-family:var(--m);font-size:.86em;padding:1px 5px;border-radius:4px;back
 .ft__cp{color:var(--tm);font-size:.7rem;font-family:var(--m)}
 .ft__af{color:var(--tm);font-size:.68rem;font-family:var(--m);opacity:.8}
 
-/* To top / Toast */
+/* To top */
 .ttop{position:fixed;right:16px;bottom:16px;width:44px;height:44px;display:grid;place-items:center;background:var(--a);color:#fff;border:none;border-radius:99px;font-size:1.4rem;font-weight:900;opacity:0;pointer-events:none;transform:translateY(6px);transition:all var(--d);z-index:90;box-shadow:0 4px 16px rgba(59,130,246,.3)}
 .ttop.is-visible{opacity:1;pointer-events:auto;transform:none}
 .ttop:hover{background:var(--a2);box-shadow:0 6px 24px rgba(59,130,246,.4);transform:translateY(-2px)}
-.tst{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(6px);background:var(--s);border:1px solid var(--a);color:var(--t);padding:7px 14px;border-radius:99px;font-size:.78rem;font-family:var(--m);opacity:0;pointer-events:none;transition:all var(--d);z-index:100}
-.tst.is-visible{opacity:1;transform:translateX(-50%)}
 
 /* RTL */
 [dir="rtl"] .nav__ls{margin-left:6px;margin-right:auto}
@@ -254,7 +252,6 @@ code{font-family:var(--m);font-size:.86em;padding:1px 5px;border-radius:4px;back
 
 @media(min-width:481px) and (max-width:1024px){
 .vp{grid-template-columns:1fr 1fr}
-.shot-placeholder{min-height:120px}
 }
 html[data-theme="light"] .bgr{background:var(--s)}html[data-theme="light"] .tt{background:var(--s)}
 

@@ -6,9 +6,9 @@ Static landing page for the **vibecode it, bro** tutorial — a cheap VPS + [Ope
 
 ## Partners
 
-<a href="https://kamatera.sjv.io/c/1245219/3024352/36439"><img src="assets/logos/kamatera.png" height="60" alt="Kamatera"></a>&nbsp;&nbsp;
-<a href="https://websplaining.com/contabo"><img src="assets/logos/contabo.png" height="60" alt="Contabo"></a>&nbsp;&nbsp;
-<a href="https://opencode.ai/go?ref=9Q6GKAZPK6"><img src="assets/logos/opencode.png" height="60" alt="OpenCode Go"></a>
+<a href="https://kamatera.sjv.io/c/1245219/3024352/36439"><img src="assets/logos/kamatera.webp" height="60" alt="Kamatera logo"></a>&nbsp;&nbsp;
+<a href="https://websplaining.com/contabo"><img src="assets/logos/contabo.webp" height="60" alt="Contabo logo"></a>&nbsp;&nbsp;
+<a href="https://opencode.ai/go?ref=9Q6GKAZPK6"><img src="assets/logos/opencode.webp" height="60" alt="OpenCode logo"></a>
 
 ## Features
 

@@ -3,23 +3,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>VibeCode It, Bro - How to Vibecode: VPS + OpenCode Go AI Coding Tutorial</title>
+<title>VibeCode It, Bro | VPS + OpenCode Go Vibecoding Tutorial</title>
 <meta name="description" content="Learn how to vibecode: set up a cheap VPS, install OpenCode Go, and ship apps with AI. Step-by-step vibecoding tutorial with Kamatera and Contabo. No SaaS bills."/>
+<link rel="canonical" href="https://vibecodeitbro.com/"/>
+<meta name="theme-color" content="#0a0d14"/>
 <meta property="og:site_name" content="vibecode it, bro"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://vibecodeitbro.com/"/>
-<meta property="og:title" content="VibeCode It, Bro - How to Vibecode: VPS + OpenCode Go AI Coding Tutorial"/>
+<meta property="og:title" content="VibeCode It, Bro | VPS + OpenCode Go Vibecoding Tutorial"/>
 <meta property="og:description" content="A cheap VPS + OpenCode Go = your own AI coding rig. No $200/mo bills. No lock-in. Just a terminal and vibes."/>
 <meta property="og:image" content="https://vibecodeitbro.com/assets/og/og-card.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta property="og:image:alt" content="vibecode it, bro — a cheap VPS + OpenCode Go = your own AI coding rig"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="VibeCode It, Bro - How to Vibecode: VPS + OpenCode Go"/>
+<meta name="twitter:title" content="VibeCode It, Bro | VPS + OpenCode Go Vibecoding Tutorial"/>
 <meta name="twitter:description" content="A cheap VPS + OpenCode Go = your own AI coding rig. No $200/mo bills. Step-by-step tutorial."/>
 <meta name="twitter:image" content="https://vibecodeitbro.com/assets/og/og-card.png"/>
 <link rel="icon" href="/assets/favicon-v3.svg" type="image/svg+xml"/>
-<link rel="stylesheet" href="/css/style.css?v=30"/>
+<link rel="stylesheet" href="/css/style.css?v=31"/>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"HowTo",
+"name":"How to Vibecode: Fresh VPS to AI Coding in ~10 Minutes",
+"description":"Set up a cheap VPS, install OpenCode, add the OpenCode Go subscription, and start vibecoding with frontier open-source AI models.",
+"totalTime":"PT10M",
+"step":[
+{"@type":"HowToStep","position":1,"name":"Spin up a VPS","text":"Launch the latest Ubuntu LTS on Kamatera or Contabo. 2 vCPU / 2 GB RAM is plenty. Save the IP and root password.","image":"https://vibecodeitbro.com/assets/screenshots/kamatera/create-free-kamatera-account.webp"},
+{"@type":"HowToStep","position":2,"name":"SSH in","text":"Connect to your server with ssh root@your-vps-ip and type yes to accept the host key, then enter the root password.","image":"https://vibecodeitbro.com/assets/screenshots/ssh/open-terminal.webp"},
+{"@type":"HowToStep","position":3,"name":"Install OpenCode","text":"Run curl -fsSL https://opencode.ai/install | bash, then source ~/.bashrc and start opencode.","image":"https://vibecodeitbro.com/assets/screenshots/ssh/run-curl-install.webp"},
+{"@type":"HowToStep","position":4,"name":"Add OpenCode Go","text":"Sign up at opencode.ai, create an API key, then in OpenCode press Ctrl+P, choose OpenCode Go, and paste your key.","image":"https://vibecodeitbro.com/assets/screenshots/ssh/connect-provider.webp"},
+{"@type":"HowToStep","position":5,"name":"Pick a model. Start vibing.","text":"Press Ctrl+P for the live model list, choose a model, and start vibecoding.","image":"https://vibecodeitbro.com/assets/screenshots/ssh/live-model-list.webp"}
+]
+}
+</script>
 </head>
 <body>
 <a class="sr" href="#main">Skip to content</a>
@@ -88,7 +106,7 @@
     <div class="vp">
       <article class="vc vc--f vc--k">
         <div class="vc__bd" data-i18n="vps.kbadge">★ recommended</div>
-        <img src="/assets/logos/kamatera.png" alt="Kamatera" class="vc__lo"/>
+        <img src="/assets/logos/kamatera.webp" alt="Kamatera logo" class="vc__lo" width="89" height="128" decoding="async"/>
         <p class="vc__tg" data-i18n="vps.ktag">Cheap, flexible, recommended</p>
         <ul class="vc__ls">
           <li data-i18n="vps.k1">⚡ <strong>Hourly billing.</strong> ~$0.005/hr. Pay for what you use.</li>
@@ -100,7 +118,7 @@
         <a class="btn btn-p btn-b" href="https://kamatera.sjv.io/c/1245219/3024352/36439" target="_blank" rel="noopener noreferrer sponsored" data-i18n="vps.kcta">Spin up Kamatera &rarr;</a>
       </article>
       <article class="vc vc--c">
-        <img src="/assets/logos/contabo.png" alt="Contabo" class="vc__lo"/>
+        <img src="/assets/logos/contabo.webp" alt="Contabo logo" class="vc__lo" width="150" height="128" decoding="async"/>
         <p class="vc__tg" data-i18n="vps.ctag">Pricier, but beefier specs</p>
         <ul class="vc__ls">
           <li data-i18n="vps.c1">💪 <strong>4 vCPU + 8 GB RAM.</strong> Cloud VPS 4. Beefier than Kamatera.</li>
@@ -127,40 +145,40 @@
         <h3 data-i18n="setup.s1t">Spin up a VPS</h3>
         <p data-i18n="setup.s1d">Click Kamatera or Contabo above. Launch the latest Ubuntu LTS. 2 vCPU / 2 GB RAM is plenty. Save the <strong>IP</strong> and <strong>root password</strong>.</p>
         <div class="sg" data-vps="kamatera">
-<figure class="sh"><span class="sh__n">1.1</span><img src="/assets/screenshots/kamatera/1. create free kamatera account.png" alt="Create account" loading="lazy"/><figcaption data-i18n="fig.1">Create a free Kamatera account</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.2</span><img src="/assets/screenshots/kamatera/2. my cloud.png" alt="My Cloud" loading="lazy"/><figcaption data-i18n="fig.2">My Cloud dashboard</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.3</span><img src="/assets/screenshots/kamatera/3. servers then create new server.png" alt="Servers" loading="lazy"/><figcaption data-i18n="fig.3">Go to Servers, create new server</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.4</span><img src="/assets/screenshots/kamatera/4.png" alt="Config" loading="lazy"/><figcaption data-i18n="fig.4">Choose a continent (region), then a country</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.5</span><img src="/assets/screenshots/kamatera/5 ubuntu.png" alt="Ubuntu" loading="lazy"/><figcaption data-i18n="fig.5">Choose operating system (OS): Ubuntu, latest version</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.6</span><img src="/assets/screenshots/kamatera/6.png" alt="CPU" loading="lazy"/><figcaption data-i18n="fig.6">Set CPU, RAM, SSD disk space, and server type (B/D/T/A)</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.7</span><img src="/assets/screenshots/kamatera/7.png" alt="Password" loading="lazy"/><figcaption data-i18n="fig.7">Set root password, name server, and billing cycle, then create the server</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.8</span><img src="/assets/screenshots/kamatera/8.png" alt="Queue" loading="lazy"/><figcaption data-i18n="fig.8">Server creation added as a task in queue</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.9</span><img src="/assets/screenshots/kamatera/9.png" alt="Finalize" loading="lazy"/><figcaption data-i18n="fig.9">Server is setting up</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.10</span><img src="/assets/screenshots/kamatera/10.png" alt="Review" loading="lazy"/><figcaption data-i18n="fig.10">Server created — appears in the server management list</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.11</span><img src="/assets/screenshots/kamatera/11.png" alt="Done" loading="lazy"/><figcaption data-i18n="fig.11">Server running - note the IP</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.1</span><img src="/assets/screenshots/kamatera/create-free-kamatera-account.webp" alt="Create a free Kamatera account" width="1280" height="679" decoding="async" loading="lazy"/><figcaption data-i18n="fig.1">Create a free Kamatera account</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.2</span><img src="/assets/screenshots/kamatera/my-cloud-dashboard.webp" alt="Kamatera My Cloud dashboard" width="1280" height="593" decoding="async" loading="lazy"/><figcaption data-i18n="fig.2">My Cloud dashboard</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.3</span><img src="/assets/screenshots/kamatera/go-to-servers.webp" alt="Go to Servers to create a new server" width="1280" height="448" decoding="async" loading="lazy"/><figcaption data-i18n="fig.3">Go to Servers, create new server</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.4</span><img src="/assets/screenshots/kamatera/choose-region-country.webp" alt="Choose a continent (region), then a country" width="1280" height="553" decoding="async" loading="lazy"/><figcaption data-i18n="fig.4">Choose a continent (region), then a country</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.5</span><img src="/assets/screenshots/kamatera/choose-os-ubuntu.webp" alt="Choose operating system (OS): Ubuntu, latest version" width="1191" height="622" decoding="async" loading="lazy"/><figcaption data-i18n="fig.5">Choose operating system (OS): Ubuntu, latest version</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.6</span><img src="/assets/screenshots/kamatera/set-cpu-ram-storage.webp" alt="Set CPU, RAM, SSD disk space, and server type (B/D/T/A)" width="1190" height="426" decoding="async" loading="lazy"/><figcaption data-i18n="fig.6">Set CPU, RAM, SSD disk space, and server type (B/D/T/A)</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.7</span><img src="/assets/screenshots/kamatera/set-root-password.webp" alt="Set root password, name server, and billing cycle, then create the server" width="1212" height="721" decoding="async" loading="lazy"/><figcaption data-i18n="fig.7">Set root password, name server, and billing cycle, then create the server</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.8</span><img src="/assets/screenshots/kamatera/server-creation-queued.webp" alt="Server creation added as a task in queue" width="372" height="840" decoding="async" loading="lazy"/><figcaption data-i18n="fig.8">Server creation added as a task in queue</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.9</span><img src="/assets/screenshots/kamatera/server-setting-up.webp" alt="Server is setting up" width="1280" height="582" decoding="async" loading="lazy"/><figcaption data-i18n="fig.9">Server is setting up</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.10</span><img src="/assets/screenshots/kamatera/server-created-list.webp" alt="Server created, shown in the server management list" width="1280" height="567" decoding="async" loading="lazy"/><figcaption data-i18n="fig.10">Server created — appears in the server management list</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.11</span><img src="/assets/screenshots/kamatera/server-running-ip.webp" alt="Server running - note the IP address" width="1280" height="408" decoding="async" loading="lazy"/><figcaption data-i18n="fig.11">Server running - note the IP</figcaption></figure>
         </div>
         <h4 class="st__sh">Or use Contabo:</h4>
         <div class="sg" data-vps="contabo">
-<figure class="sh"><span class="sh__n">1.12</span><img src="/assets/screenshots/contabo/1.png" alt="Step 1" loading="lazy"/><figcaption data-i18n="fig.12">Go to Contabo</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.13</span><img src="/assets/screenshots/contabo/2.png" alt="Step 2" loading="lazy"/><figcaption data-i18n="fig.13">Choose VPS plan</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.14</span><img src="/assets/screenshots/contabo/3.png" alt="Step 3" loading="lazy"/><figcaption data-i18n="fig.14">Select Cloud VPS 4 (formerly VPS 10, now Core VPS 4)</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.15</span><img src="/assets/screenshots/contabo/4.png" alt="Step 4" loading="lazy"/><figcaption data-i18n="fig.15">Configure server login credentials</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.16</span><img src="/assets/screenshots/contabo/5.png" alt="Step 5" loading="lazy"/><figcaption data-i18n="fig.16">Enter personal details</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.17</span><img src="/assets/screenshots/contabo/6.png" alt="Step 6" loading="lazy"/><figcaption data-i18n="fig.17">Enter billing and payment details</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.18</span><img src="/assets/screenshots/contabo/7.png" alt="Step 7" loading="lazy"/><figcaption data-i18n="fig.18">Order complete and confirmation</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.19</span><img src="/assets/screenshots/contabo/8.png" alt="Step 8" loading="lazy"/><figcaption data-i18n="fig.19">Three confirmation emails arrive — check your inbox for the server IP address</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.20</span><img src="/assets/screenshots/contabo/9.png" alt="Step 9" loading="lazy"/><figcaption data-i18n="fig.20">Open the email containing your server IP address</figcaption></figure>
-<figure class="sh"><span class="sh__n">1.21</span><img src="/assets/screenshots/contabo/10.png" alt="Step 10" loading="lazy"/><figcaption data-i18n="fig.21">Login credentials: IPv4 address, username (root), IPv6 address</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.12</span><img src="/assets/screenshots/contabo/go-to-contabo.webp" alt="Go to Contabo" width="1280" height="478" decoding="async" loading="lazy"/><figcaption data-i18n="fig.12">Go to Contabo</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.13</span><img src="/assets/screenshots/contabo/choose-vps-plan.webp" alt="Choose a VPS plan" width="1280" height="477" decoding="async" loading="lazy"/><figcaption data-i18n="fig.13">Choose VPS plan</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.14</span><img src="/assets/screenshots/contabo/select-cloud-vps-4.webp" alt="Select Cloud VPS 4 (formerly VPS 10, now Core VPS 4)" width="1190" height="741" decoding="async" loading="lazy"/><figcaption data-i18n="fig.14">Select Cloud VPS 4 (formerly VPS 10, now Core VPS 4)</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.15</span><img src="/assets/screenshots/contabo/configure-login-credentials.webp" alt="Configure server login credentials" width="1280" height="478" decoding="async" loading="lazy"/><figcaption data-i18n="fig.15">Configure server login credentials</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.16</span><img src="/assets/screenshots/contabo/enter-personal-details.webp" alt="Enter personal details" width="927" height="860" decoding="async" loading="lazy"/><figcaption data-i18n="fig.16">Enter personal details</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.17</span><img src="/assets/screenshots/contabo/enter-billing-payment.webp" alt="Enter billing and payment details" width="1107" height="582" decoding="async" loading="lazy"/><figcaption data-i18n="fig.17">Enter billing and payment details</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.18</span><img src="/assets/screenshots/contabo/order-complete-confirmation.webp" alt="Order complete and confirmation" width="1136" height="565" decoding="async" loading="lazy"/><figcaption data-i18n="fig.18">Order complete and confirmation</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.19</span><img src="/assets/screenshots/contabo/three-confirmation-emails.webp" alt="Three confirmation emails arrive - check your inbox" width="1280" height="341" decoding="async" loading="lazy"/><figcaption data-i18n="fig.19">Three confirmation emails arrive — check your inbox for the server IP address</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.20</span><img src="/assets/screenshots/contabo/email-with-server-ip.webp" alt="Email containing your server IP address" width="1280" height="338" decoding="async" loading="lazy"/><figcaption data-i18n="fig.20">Open the email containing your server IP address</figcaption></figure>
+<figure class="sh"><span class="sh__n">1.21</span><img src="/assets/screenshots/contabo/login-credentials.webp" alt="Login credentials: IPv4, username (root), IPv6" width="1181" height="547" decoding="async" loading="lazy"/><figcaption data-i18n="fig.21">Login credentials: IPv4 address, username (root), IPv6 address</figcaption></figure>
         </div>
       </div></article>
       <article class="st"><div class="st__n">2</div><div class="st__b">
         <h3 data-i18n="setup.s2t">SSH in</h3>
         <p data-i18n="setup.s2d"><code>ssh root@your-vps-ip</code>. Type <code>yes</code> at the prompt.</p>
         <div class="sg">
-<figure class="sh"><span class="sh__n">2.1</span><img src="/assets/screenshots/ssh/1.png" alt="Terminal" loading="lazy"/><figcaption data-i18n="fig.22">Open your terminal and type the SSH command</figcaption></figure>
-<figure class="sh"><span class="sh__n">2.2</span><img src="/assets/screenshots/ssh/2.png" alt="SSH" loading="lazy"/><figcaption data-i18n="fig.23">Type yes to accept the host key</figcaption></figure>
-<figure class="sh"><span class="sh__n">2.3</span><img src="/assets/screenshots/ssh/3.png" alt="Host key" loading="lazy"/><figcaption data-i18n="fig.24">Enter the root password for your server</figcaption></figure>
-<figure class="sh"><span class="sh__n">2.4</span><img src="/assets/screenshots/ssh/4.png" alt="Password" loading="lazy"/><figcaption data-i18n="fig.25">Successfully SSH'd into your server</figcaption></figure>
+<figure class="sh"><span class="sh__n">2.1</span><img src="/assets/screenshots/ssh/open-terminal.webp" alt="Open your terminal and type the SSH command" width="1280" height="106" decoding="async" loading="lazy"/><figcaption data-i18n="fig.22">Open your terminal and type the SSH command</figcaption></figure>
+<figure class="sh"><span class="sh__n">2.2</span><img src="/assets/screenshots/ssh/type-ssh-command.webp" alt="Type yes to accept the host key" width="1280" height="168" decoding="async" loading="lazy"/><figcaption data-i18n="fig.23">Type yes to accept the host key</figcaption></figure>
+<figure class="sh"><span class="sh__n">2.3</span><img src="/assets/screenshots/ssh/accept-host-key.webp" alt="Enter the root password for your server" width="512" height="22" decoding="async" loading="lazy"/><figcaption data-i18n="fig.24">Enter the root password for your server</figcaption></figure>
+<figure class="sh"><span class="sh__n">2.4</span><img src="/assets/screenshots/ssh/enter-root-password.webp" alt="Successfully SSH'd into your server" width="1280" height="675" decoding="async" loading="lazy"/><figcaption data-i18n="fig.25">Successfully SSH'd into your server</figcaption></figure>
         </div>
       </div></article>
       <article class="st"><div class="st__n">3</div><div class="st__b">
@@ -170,23 +188,23 @@
         <div class="cm"><code id="cmd2">source ~/.bashrc</code><button class="cm__c" data-copy="cmd2" aria-label="Copy" data-i18n-attr="aria-label" data-i18n="aria.copy">copy</button></div>
         <div class="cm"><code id="cmd3">opencode</code><button class="cm__c" data-copy="cmd3" aria-label="Copy" data-i18n-attr="aria-label" data-i18n="aria.copy">copy</button></div>
         <div class="sg">
-<figure class="sh"><span class="sh__n">3.1</span><img src="/assets/screenshots/ssh/5.png" alt="curl" loading="lazy"/><figcaption data-i18n="fig.26">Running the curl command to install OpenCode</figcaption></figure>
-<figure class="sh"><span class="sh__n">3.2</span><img src="/assets/screenshots/ssh/6.png" alt="Done" loading="lazy"/><figcaption data-i18n="fig.27">OpenCode installed — now run source ~/.bashrc</figcaption></figure>
-<figure class="sh"><span class="sh__n">3.3</span><img src="/assets/screenshots/ssh/7.png" alt="OpenCode" loading="lazy"/><figcaption data-i18n="fig.28">After running the opencode command</figcaption></figure>
+<figure class="sh"><span class="sh__n">3.1</span><img src="/assets/screenshots/ssh/run-curl-install.webp" alt="Running the curl command to install OpenCode" width="827" height="97" decoding="async" loading="lazy"/><figcaption data-i18n="fig.26">Running the curl command to install OpenCode</figcaption></figure>
+<figure class="sh"><span class="sh__n">3.2</span><img src="/assets/screenshots/ssh/opencode-installed.webp" alt="OpenCode installed - run source ~/.bashrc" width="865" height="491" decoding="async" loading="lazy"/><figcaption data-i18n="fig.27">OpenCode installed — now run source ~/.bashrc</figcaption></figure>
+<figure class="sh"><span class="sh__n">3.3</span><img src="/assets/screenshots/ssh/run-opencode-command.webp" alt="After running the opencode command" width="1280" height="662" decoding="async" loading="lazy"/><figcaption data-i18n="fig.28">After running the opencode command</figcaption></figure>
         </div>
       </div></article>
       <article class="st"><div class="st__n">4</div><div class="st__b">
         <h3 data-i18n="setup.s4t">Add OpenCode Go</h3>
         <p data-i18n="setup.s4d">Sign up at opencode.ai and create an API key — then in OpenCode press <kbd>Ctrl</kbd>+<kbd>P</kbd>, choose <strong>OpenCode Go</strong>, and paste your key.</p>
         <div class="sg">
-<figure class="sh"><span class="sh__n">4.1</span><img src="/assets/screenshots/ssh/8.png" alt="Installing" loading="lazy"/><figcaption data-i18n="fig.29">Connect a provider</figcaption></figure>
-<figure class="sh"><span class="sh__n">4.2</span><img src="/assets/screenshots/ssh/9.png" alt="Done" loading="lazy"/><figcaption data-i18n="fig.30">Choose OpenCode Go</figcaption></figure>
-<figure class="sh"><span class="sh__n">4.3</span><img src="/assets/screenshots/ssh/10.png" alt="Bashrc" loading="lazy"/><figcaption data-i18n="fig.31">Sign up to OpenCode Go using my <a href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer">affiliate link</a></figcaption></figure>
-<figure class="sh"><span class="sh__n">4.4</span><img src="/assets/screenshots/ssh/11.png" alt="Reloaded" loading="lazy"/><figcaption data-i18n="fig.32">Click API keys, then Create API key</figcaption></figure>
-<figure class="sh"><span class="sh__n">4.5</span><img src="/assets/screenshots/ssh/12.png" alt="Cmd" loading="lazy"/><figcaption data-i18n="fig.33">Give your API key a name or label (e.g. opencode)</figcaption></figure>
-<figure class="sh"><span class="sh__n">4.6</span><img src="/assets/screenshots/ssh/13.png" alt="Startup" loading="lazy"/><figcaption data-i18n="fig.34">Click create</figcaption></figure>
-<figure class="sh"><span class="sh__n">4.7</span><img src="/assets/screenshots/ssh/14.png" alt="UI" loading="lazy"/><figcaption data-i18n="fig.35">Copy the API key — click the copy-to-clipboard icon next to it</figcaption></figure>
-<figure class="sh"><span class="sh__n">4.8</span><img src="/assets/screenshots/ssh/15.png" alt="Welcome" loading="lazy"/><figcaption data-i18n="fig.36">Hold Shift and right-click to paste the API key (it starts with SK-, e.g. sk-WL68...szAkl), then press Enter</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.1</span><img src="/assets/screenshots/ssh/connect-provider.webp" alt="Connect a provider" width="702" height="476" decoding="async" loading="lazy"/><figcaption data-i18n="fig.29">Connect a provider</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.2</span><img src="/assets/screenshots/ssh/choose-opencode-go.webp" alt="Choose OpenCode Go" width="712" height="482" decoding="async" loading="lazy"/><figcaption data-i18n="fig.30">Choose OpenCode Go</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.3</span><img src="/assets/screenshots/ssh/sign-up-affiliate.webp" alt="Sign up to OpenCode Go using the affiliate link" width="705" height="327" decoding="async" loading="lazy"/><figcaption data-i18n="fig.31">Sign up to OpenCode Go using my <a href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer">affiliate link</a></figcaption></figure>
+<figure class="sh"><span class="sh__n">4.4</span><img src="/assets/screenshots/ssh/click-api-keys.webp" alt="Click API keys, then Create API key" width="1280" height="355" decoding="async" loading="lazy"/><figcaption data-i18n="fig.32">Click API keys, then Create API key</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.5</span><img src="/assets/screenshots/ssh/name-api-key.webp" alt="Name or label your API key (e.g. opencode)" width="1266" height="282" decoding="async" loading="lazy"/><figcaption data-i18n="fig.33">Give your API key a name or label (e.g. opencode)</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.6</span><img src="/assets/screenshots/ssh/click-create.webp" alt="Click create" width="1272" height="282" decoding="async" loading="lazy"/><figcaption data-i18n="fig.34">Click create</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.7</span><img src="/assets/screenshots/ssh/copy-api-key.webp" alt="Copy the API key with the copy-to-clipboard icon" width="1280" height="253" decoding="async" loading="lazy"/><figcaption data-i18n="fig.35">Copy the API key — click the copy-to-clipboard icon next to it</figcaption></figure>
+<figure class="sh"><span class="sh__n">4.8</span><img src="/assets/screenshots/ssh/paste-api-key.webp" alt="Paste the API key (starts with SK-), then press Enter" width="582" height="286" decoding="async" loading="lazy"/><figcaption data-i18n="fig.36">Hold Shift and right-click to paste the API key (it starts with SK-, e.g. sk-WL68...szAkl), then press Enter</figcaption></figure>
         </div>
         <p class="st__h" data-i18n="setup.s4d2">💡 No account? <a href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer">Grab one here</a>.</p>
       </div></article>
@@ -194,9 +212,9 @@
         <h3 data-i18n="setup.s5t">Pick a model. Start vibing.</h3>
         <p data-i18n="setup.s5d">Hit <kbd>Ctrl</kbd>+<kbd>P</kbd> again, pick <strong>model</strong>:</p>
         <div class="sg">
-<figure class="sh"><span class="sh__n">5.1</span><img src="/assets/screenshots/ssh/16.png" alt="Ctrl+P" loading="lazy"/><figcaption data-i18n="fig.37">Press Ctrl+P for the live model list and choose a model</figcaption></figure>
-<figure class="sh"><span class="sh__n">5.2</span><img src="/assets/screenshots/ssh/17.png" alt="Model" loading="lazy"/><figcaption data-i18n="fig.38">Select a model variant — it determines how many tokens are burned and how fast inference runs (not all models have variants)</figcaption></figure>
-<figure class="sh"><span class="sh__n">5.3</span><img src="/assets/screenshots/ssh/18.png" alt="Vibing" loading="lazy"/><figcaption data-i18n="fig.39">You are now vibecoding</figcaption></figure>
+<figure class="sh"><span class="sh__n">5.1</span><img src="/assets/screenshots/ssh/live-model-list.webp" alt="Press Ctrl+P for the live model list and choose a model" width="707" height="482" decoding="async" loading="lazy"/><figcaption data-i18n="fig.37">Press Ctrl+P for the live model list and choose a model</figcaption></figure>
+<figure class="sh"><span class="sh__n">5.2</span><img src="/assets/screenshots/ssh/select-model-variant.webp" alt="Select a model variant - determines token usage and inference speed" width="712" height="217" decoding="async" loading="lazy"/><figcaption data-i18n="fig.38">Select a model variant — it determines how many tokens are burned and how fast inference runs (not all models have variants)</figcaption></figure>
+<figure class="sh"><span class="sh__n">5.3</span><img src="/assets/screenshots/ssh/vibecoding.webp" alt="You are now vibecoding" width="1052" height="360" decoding="async" loading="lazy"/><figcaption data-i18n="fig.39">You are now vibecoding</figcaption></figure>
         </div>
         <div class="mo" id="models" aria-busy="true">
           <div class="mo__ld" id="modelsLoading"><span class="sp" aria-hidden="true"></span> <span data-i18n="setup.loading">loading model list...</span></div>
@@ -234,10 +252,10 @@
   <div class="ct ft__in">
     <a class="ft__b" href="#top">vibecode it, bro</a>
     <nav class="ft__ls">
-      <a href="https://kamatera.sjv.io/c/1245219/3024352/36439" target="_blank" rel="noopener noreferrer sponsored" class="ft__lo ft__lo--k" title="Kamatera"><img src="/assets/logos/kamatera.png" alt="Kamatera"/></a>
-      <a href="https://websplaining.com/contabo" target="_blank" rel="noopener noreferrer sponsored" class="ft__lo ft__lo--c" title="Contabo"><img src="/assets/logos/contabo.png" alt="Contabo"/></a>
-      <a href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer sponsored" class="ft__lo ft__lo--o" title="OpenCode Go"><img src="/assets/logos/opencode.png" alt="OpenCode"/></a>
-      <a href="https://www.youtube.com/@Websplaining" target="_blank" rel="noopener noreferrer" class="ft__lo ft__lo--w" title="Websplaining"><img src="/assets/logos/websplaining.png" alt="Websplaining"/></a>
+      <a href="https://kamatera.sjv.io/c/1245219/3024352/36439" target="_blank" rel="noopener noreferrer sponsored" class="ft__lo ft__lo--k" title="Kamatera"><img src="/assets/logos/kamatera.webp" alt="Kamatera logo" width="89" height="128" decoding="async"/></a>
+      <a href="https://websplaining.com/contabo" target="_blank" rel="noopener noreferrer sponsored" class="ft__lo ft__lo--c" title="Contabo"><img src="/assets/logos/contabo.webp" alt="Contabo logo" width="150" height="128" decoding="async"/></a>
+      <a href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer sponsored" class="ft__lo ft__lo--o" title="OpenCode Go"><img src="/assets/logos/opencode.webp" alt="OpenCode logo" width="128" height="128" decoding="async"/></a>
+      <a href="https://www.youtube.com/@Websplaining" target="_blank" rel="noopener noreferrer" class="ft__lo ft__lo--w" title="Websplaining"><img src="/assets/logos/websplaining.webp" alt="Websplaining logo" width="128" height="128" decoding="async"/></a>
     </nav>
     <p class="ft__cp">© <span id="year"></span> Websplaining · vibecodeitbro.com</p>
     <p class="ft__af" data-i18n="footer.affiliate">Affiliate links - we may earn a commission at no cost to you.</p>
@@ -245,11 +263,10 @@
 </footer>
 
 <button id="toTop" class="ttop" type="button" aria-label="Back to top">&uarr;</button>
-<div class="tst" id="toast" role="status" aria-live="polite"></div>
 
-<script>(function(){var l=localStorage.getItem('lang')||(navigator.language||'en').split('-')[0];var v=['en','fr','es','nl','ja','zh','ar','ru','fa','vi','yue','de','pt','hi','ko','it','tr','pl','id'];if(v.indexOf(l)===-1)l='en';document.write('<script src="/js/i18n/'+l+'.js?v=10"><'+'/script>');})()</script>
+<script>(function(){var l=localStorage.getItem('lang')||(navigator.language||'en').split('-')[0];var v=['en','fr','es','nl','ja','zh','ar','ru','fa','vi','yue','de','pt','hi','ko','it','tr','pl','id'];if(v.indexOf(l)===-1)l='en';document.write('<script src="/js/i18n/'+l+'.js?v=11"><'+'/script>');})()</script>
 <script>(function(){var d=document.documentElement;var t=localStorage.getItem('theme')||'dark';d.setAttribute('data-theme',t);var b=document.getElementById('themeToggle');b.textContent=t==='dark'?'☀':'☾';b.addEventListener('click',function(){var n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('theme',n);b.textContent=n==='dark'?'☀':'☾';});})()</script>
-<script src="/js/app.js?v=18" defer></script>
+<script src="/js/app.js?v=19" defer></script>
 <script src="/js/models.js?v=10" defer></script>
 </body>
 </html>
