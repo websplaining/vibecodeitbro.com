@@ -21,13 +21,13 @@
 <meta name="twitter:description" content="A cheap VPS + OpenCode Go = your own AI coding rig. No $200/mo bills. Step-by-step tutorial."/>
 <meta name="twitter:image" content="https://vibecodeitbro.com/assets/og/og-card.png"/>
 <link rel="icon" href="/assets/favicon-v3.svg" type="image/svg+xml"/>
-<link rel="stylesheet" href="/css/style.css?v=31"/>
+<link rel="stylesheet" href="/css/style.css?v=33"/>
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
 "@type":"HowTo",
 "name":"How to Vibecode: Fresh VPS to AI Coding in ~10 Minutes",
-"description":"Set up a cheap VPS, install OpenCode, add the OpenCode Go subscription, and start vibecoding with frontier open-source AI models.",
+"description":"Set up a cheap VPS, install OpenCode, add the OpenCode Go subscription, and start vibecoding with the full Go model lineup.",
 "totalTime":"PT10M",
 "step":[
 {"@type":"HowToStep","position":1,"name":"Spin up a VPS","text":"Launch the latest Ubuntu LTS on Kamatera or Contabo. 2 vCPU / 2 GB RAM is plenty. Save the IP and root password.","image":"https://vibecodeitbro.com/assets/screenshots/kamatera/create-free-kamatera-account.webp"},
@@ -94,8 +94,8 @@
   <div class="ct">
     <div class="sc__hd"><span class="ey" data-i18n="stack.eyebrow">// the stack</span><h2 class="sc__t" data-i18n="stack.title">Two things. That's it.</h2></div>
     <div class="gd gd-2">
-      <div class="cd cd-n"><span class="cd__n">01</span><h3 data-i18n="stack.s1t">A VPS</h3><p data-i18n="stack.s1d">A $5/mo Linux box you own. <strong>Kamatera</strong> for cheap hourly, <strong>Contabo</strong> for beefy specs.</p><a class="cd__l" href="#vps" data-i18n="stack.s1a">Compare &rarr;</a></div>
-      <div class="cd cd-n"><span class="cd__n">02</span><h3 data-i18n="stack.s2t">OpenCode Go</h3><p data-i18n="stack.s2d">$5 first month, then $10/mo flat-rate. Access to frontier open-source models like Grok 4.5, GLM-5.2, and Kimi K3. No per-token anxiety.</p><a class="cd__l" href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer sponsored" data-i18n="stack.s2a">Get OpenCode Go &rarr;</a></div>
+      <div class="cd cd-n"><span class="cd__n">01</span><h3 data-i18n="stack.s1t">A VPS</h3><p data-i18n="stack.s1d">A $4/mo Linux box you own. <strong>Kamatera</strong> for cheap hourly, <strong>Contabo</strong> for beefy specs.</p><a class="cd__l" href="#vps" data-i18n="stack.s1a">Compare &rarr;</a></div>
+      <div class="cd cd-n"><span class="cd__n">02</span><h3 data-i18n="stack.s2t">OpenCode Go</h3><p data-i18n="stack.s2d">$10/mo flat-rate. Get $5 usage credit via my referral link. Access every model in the Go lineup. No per-token anxiety.</p><a class="cd__l" href="https://opencode.ai/go?ref=9Q6GKAZPK6" target="_blank" rel="noopener noreferrer sponsored" data-i18n="stack.s2a">Get OpenCode Go &rarr;</a></div>
     </div>
   </div>
 </section>
@@ -140,10 +140,14 @@
 <section class="sc sc-a" id="setup">
   <div class="ct">
     <div class="sc__hd"><span class="ey" data-i18n="setup.eyebrow">// the walkthrough</span><h2 class="sc__t" data-i18n="setup.title">Fresh VPS to vibecoding in ~10 minutes.</h2></div>
+    <div class="vd vd--single">
+      <div class="vd__c"><span class="vd__l">🎬 Full walkthrough: Kamatera + OpenCode Go</span><iframe src="https://www.youtube-nocookie.com/embed/UcV2gIet_zk" title="How to Vibe Code as a beginner on a Kamatera Cloud VPS with an OpenCode Go Subscription" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+    </div>
     <div class="stp">
       <article class="st"><div class="st__n">1</div><div class="st__b">
         <h3 data-i18n="setup.s1t">Spin up a VPS</h3>
         <p data-i18n="setup.s1d">Click Kamatera or Contabo above. Launch the latest Ubuntu LTS. 2 vCPU / 2 GB RAM is plenty. Save the <strong>IP</strong> and <strong>root password</strong>.</p>
+        <h4 class="st__sh" data-i18n="setup.kLabel">Using Kamatera (recommended):</h4>
         <div class="sg" data-vps="kamatera">
 <figure class="sh"><span class="sh__n">1.1</span><img src="/assets/screenshots/kamatera/create-free-kamatera-account.webp" alt="Create a free Kamatera account" loading="lazy"/><figcaption data-i18n="fig.1">Create a free Kamatera account</figcaption></figure>
 <figure class="sh"><span class="sh__n">1.2</span><img src="/assets/screenshots/kamatera/my-cloud-dashboard.webp" alt="Kamatera My Cloud dashboard" loading="lazy"/><figcaption data-i18n="fig.2">My Cloud dashboard</figcaption></figure>
@@ -157,7 +161,7 @@
 <figure class="sh"><span class="sh__n">1.10</span><img src="/assets/screenshots/kamatera/server-created-list.webp" alt="Server created, shown in the server management list" loading="lazy"/><figcaption data-i18n="fig.10">Server created — appears in the server management list</figcaption></figure>
 <figure class="sh"><span class="sh__n">1.11</span><img src="/assets/screenshots/kamatera/server-running-ip.webp" alt="Server running - note the IP address" loading="lazy"/><figcaption data-i18n="fig.11">Server running - note the IP</figcaption></figure>
         </div>
-        <h4 class="st__sh">Or use Contabo:</h4>
+        <h4 class="st__sh" data-i18n="setup.cLabel">Or use Contabo:</h4>
         <div class="sg" data-vps="contabo">
 <figure class="sh"><span class="sh__n">1.12</span><img src="/assets/screenshots/contabo/go-to-contabo.webp" alt="Go to Contabo" loading="lazy"/><figcaption data-i18n="fig.12">Go to Contabo</figcaption></figure>
 <figure class="sh"><span class="sh__n">1.13</span><img src="/assets/screenshots/contabo/choose-vps-plan.webp" alt="Choose a VPS plan" loading="lazy"/><figcaption data-i18n="fig.13">Choose VPS plan</figcaption></figure>
@@ -264,9 +268,9 @@
 
 <button id="toTop" class="ttop" type="button" aria-label="Back to top">&uarr;</button>
 
-<script>(function(){var l=localStorage.getItem('lang')||(navigator.language||'en').split('-')[0];var v=['en','fr','es','nl','ja','zh','ar','ru','fa','vi','yue','de','pt','hi','ko','it','tr','pl','id'];if(v.indexOf(l)===-1)l='en';document.write('<script src="/js/i18n/'+l+'.js?v=11"><'+'/script>');})()</script>
+<script>(function(){var l=localStorage.getItem('lang')||(navigator.language||'en').split('-')[0];var v=['en','fr','es','nl','ja','zh','ar','ru','fa','vi','yue','de','pt','hi','ko','it','tr','pl','id'];if(v.indexOf(l)===-1)l='en';document.write('<script src="/js/i18n/'+l+'.js?v=14"><'+'/script>');})()</script>
 <script>(function(){var d=document.documentElement;var t=localStorage.getItem('theme')||'dark';d.setAttribute('data-theme',t);var b=document.getElementById('themeToggle');b.textContent=t==='dark'?'☀':'☾';b.addEventListener('click',function(){var n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('theme',n);b.textContent=n==='dark'?'☀':'☾';});})()</script>
 <script src="/js/app.js?v=19" defer></script>
-<script src="/js/models.js?v=10" defer></script>
+<script src="/js/models.js?v=11" defer></script>
 </body>
 </html>

@@ -31,10 +31,22 @@ var M={
 'hy3':{n:'Hy3',p:'',t:['coding','fast']},
 'hy3-preview':{n:'Hy3 Preview',p:'',t:['coding','fast']},
 'gpt-5.6-luna':{n:'GPT 5.6 Luna',p:'OpenAI',t:['frontier','coding','reasoning']},
-'grok-4.5':{n:'Grok 4.5',p:'xAI',t:['frontier','coding','reasoning']}
+'grok-4.5':{n:'Grok 4.5',p:'xAI',t:['frontier','coding','reasoning']},
+'grok-4.6':{n:'Grok 4.6',p:'xAI',t:['frontier','coding','reasoning']},
+'glm-5.3':{n:'GLM-5.3',p:'Zhipu AI',t:['frontier','coding','reasoning']},
+'glm-5.3-flash':{n:'GLM-5.3 Flash',p:'Zhipu AI',t:['fast','coding']},
+'deepseek-flash':{n:'DeepSeek Flash',p:'DeepSeek',t:['fast','coding']},
+'deepseek-v4.1-flash':{n:'DeepSeek V4.1 Flash',p:'DeepSeek',t:['fast','coding']},
+'deepseek-v4-flash-vision-exp':{n:'DeepSeek V4 Flash Vision Exp',p:'DeepSeek',t:['vision','fast','coding']},
+'qwen3.8-flash':{n:'Qwen3.8 Flash',p:'Alibaba',t:['fast','coding']},
+'longcat-2.0':{n:'LongCat 2.0',p:'LongCat',t:['coding','reasoning']},
+'hy4-preview':{n:'Hy4 Preview',p:'',t:['coding','fast']},
+'muse-spark-1.3-contributor':{n:'Muse Spark 1.3 Contributor',p:'',t:['coding','fast']},
+'muse-spark-1.2-contributor':{n:'Muse Spark 1.2 Contributor',p:'',t:['coding','fast']},
+'omen-alpha':{n:'Omen Alpha',p:'',t:['coding','reasoning']}
 };
 
-var F=['minimax-m3','minimax-m2.7','minimax-m2.5','kimi-k3','kimi-k2.7-code','kimi-k2.6','kimi-k2.5','glm-5.2','glm-5.1','glm-5','deepseek-v4-pro','deepseek-v4-flash','qwen3.7-max','qwen3.8-max','qwen3.7-plus','qwen3.6-plus','qwen3.5-plus','mimo-v2-pro','mimo-v2-omni','mimo-v2.5-pro','mimo-v2.5','hy3','hy3-preview','gpt-5.6-luna','grok-4.5'];
+var F=['minimax-m3','minimax-m2.7','minimax-m2.5','kimi-k3','kimi-k2.7-code','kimi-k2.6','kimi-k2.5','glm-5.2','glm-5.3','glm-5.3-flash','glm-5.1','glm-5','deepseek-v4-pro','deepseek-v4-flash','deepseek-flash','deepseek-v4.1-flash','deepseek-v4-flash-vision-exp','qwen3.7-max','qwen3.8-max','qwen3.8-flash','qwen3.7-plus','qwen3.6-plus','qwen3.5-plus','mimo-v2-pro','mimo-v2-omni','mimo-v2.5-pro','mimo-v2.5','longcat-2.0','hy4-preview','hy3','hy3-preview','muse-spark-1.3-contributor','muse-spark-1.2-contributor','gpt-5.6-luna','grok-4.5','grok-4.6','omen-alpha'];
 
 var cur=F,fb=false,note=null;
 
@@ -46,11 +58,28 @@ return(d||{})[k]||k;
 
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
+function derive(id){
+var s=String(id).toLowerCase();
+var pfx=[['minimax','MiniMax'],['deepseek','DeepSeek'],['longcat','LongCat'],['muse',''],['omen',''],['kimi','Moonshot'],['glm','Zhipu AI'],['qwen','Alibaba'],['mimo','MiMo'],['gpt','OpenAI'],['grok','xAI'],['hy','']];
+var p='';
+for(var i=0;i<pfx.length;i++){if(s.indexOf(pfx[i][0])===0){p=pfx[i][1];break;}}
+var cap={minimax:'MiniMax',deepseek:'DeepSeek',kimi:'Kimi',glm:'GLM',qwen:'Qwen',mimo:'MiMo',gpt:'GPT',grok:'Grok',longcat:'LongCat',muse:'Muse',omen:'Omen',hy:'Hy',ai:'AI',vl:'VL',pro:'Pro',omni:'Omni'};
+var n=String(id).split('-').map(function(w){return cap[w.toLowerCase()]||w.charAt(0).toUpperCase()+w.slice(1);}).join(' ');
+var t=[];
+if(/pro|max|ultra|opus|frontier/.test(s))t.push('frontier');
+if(/code|coder/.test(s))t.push('coding');
+if(/reason|think/.test(s))t.push('reasoning');
+if(/flash|mini|fast|lite|small|turbo/.test(s))t.push('fast');
+if(/vision|omni|vl/.test(s))t.push('vision');
+if(!t.length)t.push('coding');
+return{n:n,p:p,t:t};
+}
+
 function render(){
 var ids=cur.slice().sort(function(a,b){return(M[a]?M[a].n:a).toLowerCase()<(M[b]?M[b].n:b).toLowerCase()?-1:1;});
 g.innerHTML='';
 ids.forEach(function(id){
-var m=M[id]||{n:id,p:'',t:[]};
+var m=M[id]||derive(id);
 var e=document.createElement('div');
 e.className='ml';
 e.innerHTML='<div class="ml__n">'+esc(m.n)+'</div>'+(m.p?'<div class="ml__p">'+esc(m.p)+'</div>':'')+'<div class="ml__t">'+m.t.map(function(tg){return'<span class="ml__tg">'+t('models.'+tg)+'</span>';}).join('')+'</div>';
